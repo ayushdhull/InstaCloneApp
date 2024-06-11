@@ -42,6 +42,7 @@ router.get("/feed", isLoggedIn, async function (req, res) {
   var uniq = {};
   var filtered = stories.filter(item => {
     if(!uniq[item.user.id]){
+      
       uniq[item.user.id] = " ";
       return true;
     }
