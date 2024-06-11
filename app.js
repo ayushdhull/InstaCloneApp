@@ -19,7 +19,7 @@ app.use(expressSession({
   resave: false,
   saveUninitialized: false,
   secret: "heyheyehhdd"
-}));
+})); //that will use to login user ..sever pr rkh skte h login using expressession
 app.use(passport.initialize());
 app.use(passport.session());
 passport.serializeUser(usersRouter.serializeUser());
